@@ -30,4 +30,10 @@ class Counter {
 		return info;
 	}
 	
+	public boolean equals(Counter otherCounter) {
+		if (this.position == otherCounter.position)
+			return true;
+		else
+			return false;
+	}
 }
