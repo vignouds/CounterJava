@@ -9,7 +9,7 @@ class Counter {
 		this.position=0;
 		this.step=1;
 		
-		if(globalCounter!=-1) {
+		if(globalCounter=-1) {
 			globalCounter=0;
 		}
 	}
@@ -27,6 +27,10 @@ class Counter {
 	
 	public int getValue(){
 		return this.position;
+	}
+	
+	public static int getGlobalCounter() {
+		return globalCounter;
 	}
 	
 	public void inc() {
