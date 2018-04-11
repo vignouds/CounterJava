@@ -24,4 +24,10 @@ class Counter {
 		position = position + step; 
 	}
 	
+	public String toString() {
+		String info = new String();
+		info = "valeur " + position + " (increment " + step +")";
+		return info;
+	}
+	
 }
