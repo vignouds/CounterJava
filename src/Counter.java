@@ -1,39 +1,34 @@
 
 class Counter {
-	int position, step;
+	private int position, step;
 	
 	//Constructeur "vide"
-	Counter() 
+	public Counter() 
 	{
-		position=0;
-		step=1;
+		this.position=0;
+		this.step=1;
 	}
 	
 	// Constructeur avec paramètres
-	Counter(int p, int s)
+	public Counter(int p, int s)
 	{
-		position=p;
-		step=s;
+		this.position=p;
+		this.step=s;
 	}
 	
 	public int getValue(){
-		return position;
+		return this.position;
 	}
 	
 	public void inc() {
-		position = position + step; 
+		this.position = this.position + this.step; 
 	}
 	
-	public String toString() {
-		String info = new String();
-		info = "valeur " + position + " (increment " + step +")";
-		return info;
+	public String toString() {	
+		return "valeur " + this.getValue() + " (increment " + step +")";
 	}
 	
-	public boolean equals(Counter otherCounter) {
-		if (this.position == otherCounter.position)
-			return true;
-		else
-			return false;
+	public boolean equals(Counter otherCounter) {		
+		return this.getValue() == otherCounter.getValue();
 	}
 }
