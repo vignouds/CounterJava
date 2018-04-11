@@ -9,7 +9,7 @@ class Counter {
 		this.position=0;
 		this.step=1;
 		
-		if(globalCounter=-1) {
+		if(globalCounter==-1) {
 			globalCounter=0;
 		}
 	}
