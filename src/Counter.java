@@ -20,4 +20,8 @@ class Counter {
 		return position;
 	}
 	
+	public void inc() {
+		position = position + step; 
+	}
+	
 }
